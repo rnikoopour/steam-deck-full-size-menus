@@ -3,7 +3,7 @@
   "author": "dankutron9000",
   "version": "v1.0",
   "description": "Extends the QAM and Main Menus to the bottom of the screen",
-  "target": "System-Wide",
+  "target": "Tweak",
   "manifest_version": 8,
   "inject": {
     "shared.css": ["bigpicture"]
