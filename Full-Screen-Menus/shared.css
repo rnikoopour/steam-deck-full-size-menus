@@ -1,0 +1,7 @@
+.quickaccessmenu_ViewPlaceholder_2orc8:not(.quickaccessmenu_FullHeight_3ud27) {
+    height: calc(100% - var(--basicui-header-height));
+}
+
+.mainmenu_ViewPlaceholder_1PGlK {
+    height: 575px;
+}
