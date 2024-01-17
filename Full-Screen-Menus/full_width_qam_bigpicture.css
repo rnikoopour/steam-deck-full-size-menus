@@ -7,6 +7,8 @@
 }
 
 .quickaccessmenu_Tabs_3Ag1w {
+    /* The in game QAM was overlaying the top menu by 1px
+        this compensates for that. */
     top: 1px;
 }
 
