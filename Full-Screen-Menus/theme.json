@@ -1,8 +1,8 @@
 {
   "name": "Full Screen Menus",
   "author": "dankutron9000",
-  "version": "v1.1",
-  "description": "Extends the QAM and Main Menus to the bottom of the screen. Can also be used to extend main menu to full width.",
+  "version": "v1.2",
+  "description": "Extends the QAM and Main Menus to the bottom of the screen. Can also extend both menus to full width.",
   "target": "Tweak",
   "manifest_version": 8,
   "inject": {
@@ -21,6 +21,21 @@
             "bigpicture"
           ],
           "full_width_mainmenu.css": [
+            "MainMenu"
+          ]
+        }
+      }
+    },
+    "QAM Full Width": {
+      "default": "No",
+      "type": "checkbox",
+      "values": {
+        "No": {},
+        "Yes": {
+          "full_width_qam_bigpicture.css": [
+            "bigpicture"
+          ],
+          "full_width_qam.css": [
             "MainMenu"
           ]
         }
