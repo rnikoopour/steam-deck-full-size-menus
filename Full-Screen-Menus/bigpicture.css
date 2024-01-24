@@ -17,3 +17,7 @@
 .mainmenu_ViewPlaceholder_1PGlK {
     width: var(--main-menu-width);
 }
+
+.mainmenu_ViewPlaceholder_1PGlK.mainmenu_Fullscreen_26eRZ {
+    width: var(--main-menu-width);    
+}
