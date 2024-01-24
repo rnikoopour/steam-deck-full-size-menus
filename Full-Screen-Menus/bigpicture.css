@@ -1,12 +1,5 @@
 .quickaccessmenu_ViewPlaceholder_2orc8:not(.quickaccessmenu_FullHeight_3ud27) {
     height: calc(100% - var(--basicui-header-height));
-}
-
-.mainmenu_ViewPlaceholder_1PGlK {
-    height: calc(100vh + var(--basicui-header-height))
-}
-
-.quickaccessmenu_ViewPlaceholder_2orc8:not(.quickaccessmenu_FullHeight_3ud27) {
     width: var(--qam-width);
 }
 
@@ -15,9 +8,6 @@
 }
 
 .mainmenu_ViewPlaceholder_1PGlK {
+    height: calc(100vh + var(--basicui-header-height));
     width: var(--main-menu-width);
-}
-
-.mainmenu_ViewPlaceholder_1PGlK.mainmenu_Fullscreen_26eRZ {
-    width: var(--main-menu-width);    
 }
