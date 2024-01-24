@@ -1,4 +1,3 @@
 .mainmenu_ViewPlaceholder_1PGlK {
-    width: 100vw;
+    width: var(--main-menu-width);
 }
-
