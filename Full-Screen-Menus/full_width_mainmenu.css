@@ -1,9 +1,9 @@
 .mainmenu_Menu_23IDi.mainmenu_Open_3apLK {
-    width: 100%;
+    width: var(--main-menu-width);
 }
 
 .mainmenu_ItemOuter_1BbM8 {
-    width: 100%;
+    width: var(--main-menu-width);
 }
 
 .mainmenu_ActiveDot_1uLVH {
@@ -13,4 +13,8 @@
 
 .mainmenu_ItemLabel_3x-ZK {
     max-width: unset;
+}
+
+.mainmenuapprunning_NavigationColumn_27FEg {
+    scroll-snap-align: start;
 }
