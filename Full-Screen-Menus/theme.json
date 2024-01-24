@@ -8,37 +8,64 @@
   "inject": {
     "shared.css": [
       "bigpicture"
+    ],
+    "full_width_mainmenu_bigpicture.css": [
+      "bigpicture"
+    ],
+    "full_width_mainmenu.css": [
+      "MainMenu"
     ]
   },
   "patches": {
-    "Main Menu Full Width": {
-      "default": "No",
-      "type": "checkbox",
+    "Main Menu Width": {
+      "default": "Off",
+      "type": "slider",
       "values": {
-        "No": {},
-        "Yes": {
-          "full_width_mainmenu_bigpicture.css": [
+        "Off": {
+          "--main-menu-width": [
+            "240px",
             "bigpicture"
-          ],
-          "full_width_mainmenu.css": [
-            "MainMenu"
+          ]
+        },
+        "25%": {
+          "--main-menu-width": [
+            "25vw",
+            "bigpicture"
+          ]
+        },
+        "50%": {
+          "--main-menu-width": [
+            "50vw",
+            "bigpicture"
+          ]
+        },
+        "75%": {
+          "--main-menu-width": [
+            "75vw",
+            "bigpicture"
+          ]
+        },
+        "100%": {
+          "--main-menu-width": [
+            "100vw",
+            "bigpicture"
           ]
         }
       }
-    },
-    "QAM Full Width": {
-      "default": "No",
-      "type": "checkbox",
-      "values": {
-        "No": {},
-        "Yes": {
-          "full_width_qam_bigpicture.css": [
-            "bigpicture"
-          ],
-          "full_width_qam.css": [
-            "QuickAccess"
-          ]
-        }
+    }
+  },
+  "QAM Full Width": {
+    "default": "No",
+    "type": "checkbox",
+    "values": {
+      "No": {},
+      "Yes": {
+        "full_width_qam_bigpicture.css": [
+          "bigpicture"
+        ],
+        "full_width_qam.css": [
+          "QuickAccess"
+        ]
       }
     }
   }
