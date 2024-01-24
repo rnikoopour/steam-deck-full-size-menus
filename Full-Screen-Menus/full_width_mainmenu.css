@@ -1,9 +1,13 @@
-.mainmenu_Menu_23IDi.mainmenu_Open_3apLK {
-    width: 100vw;
+.mainmenu_Menu_23IDi.mainmenu_Open_3apLK:only-child {
+    width: 100%;
+}
+
+.mainmenu_Menu_23IDi.mainmenu_Open_3apLK:not(:only-child) {
+    width: var(--main-menu-width);
 }
 
 .mainmenu_ItemOuter_1BbM8 {
-    width: 100vw;
+    width: 100%;
 }
 
 .mainmenu_ActiveDot_1uLVH {
