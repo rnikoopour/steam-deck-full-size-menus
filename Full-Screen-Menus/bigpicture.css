@@ -1,0 +1,13 @@
+.quickaccessmenu_ViewPlaceholder_2orc8:not(.quickaccessmenu_FullHeight_3ud27) {
+    height: calc(100% - var(--basicui-header-height));
+    width: var(--qam-width);
+}
+
+.quickaccessmenu_ViewPlaceholder_2orc8 {
+    width: var(--qam-width);
+}
+
+.mainmenu_ViewPlaceholder_1PGlK {
+    height: calc(100vh + var(--basicui-header-height));
+    width: var(--main-menu-width);
+}

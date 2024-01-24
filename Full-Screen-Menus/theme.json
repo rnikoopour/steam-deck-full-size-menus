@@ -1,42 +1,89 @@
 {
   "name": "Full Screen Menus",
   "author": "dankutron9000",
-  "version": "v1.2",
-  "description": "Extends the QAM and Main Menus to the bottom of the screen. Can also extend both menus to full width.",
+  "version": "v1.3",
+  "description": "Extends the QAM and Main Menus to the bottom of the screen. Introduces adjustable menu widths.",
   "target": "Tweak",
   "manifest_version": 8,
   "inject": {
-    "shared.css": [
+    "bigpicture.css": [
       "bigpicture"
+    ],
+    "full_width_mainmenu.css": [
+      "MainMenu"
+    ],
+    "full_width_qam.css": [
+      "QuickAccess"
     ]
   },
   "patches": {
-    "Main Menu Full Width": {
-      "default": "No",
-      "type": "checkbox",
+    "Main Menu Width": {
+      "default": "Off",
+      "type": "slider",
       "values": {
-        "No": {},
-        "Yes": {
-          "full_width_mainmenu_bigpicture.css": [
-            "bigpicture"
-          ],
-          "full_width_mainmenu.css": [
+        "Off": {
+          "--main-menu-width": [
+            "240px",
+            "bigpicture",
+            "MainMenu"
+          ]
+        },
+        "25%": {
+          "--main-menu-width": [
+            "25vw",
+            "bigpicture",
+            "MainMenu"
+          ]
+        },
+        "50%": {
+          "--main-menu-width": [
+            "50vw",
+            "bigpicture",
+            "MainMenu"
+          ]
+        },
+        "75%": {
+          "--main-menu-width": [
+            "75vw",
+            "bigpicture",
+            "MainMenu"
+          ]
+        },
+        "100%": {
+          "--main-menu-width": [
+            "100vw",
+            "bigpicture",
             "MainMenu"
           ]
         }
       }
     },
-    "QAM Full Width": {
-      "default": "No",
-      "type": "checkbox",
+    "QAM Width": {
+      "default": "Off",
+      "type": "slider",
       "values": {
-        "No": {},
-        "Yes": {
-          "full_width_qam_bigpicture.css": [
+        "Off": {
+          "--qam-width": [
+            "348px",
             "bigpicture"
-          ],
-          "full_width_qam.css": [
-            "QuickAccess"
+          ]
+        },
+        "50%": {
+          "--qam-width": [
+            "50vw",
+            "bigpicture"
+          ]
+        },
+        "75%": {
+          "--qam-width": [
+            "75vw",
+            "bigpicture"
+          ]
+        },
+        "100%": {
+          "--qam-width": [
+            "100vw",
+            "bigpicture"
           ]
         }
       }
