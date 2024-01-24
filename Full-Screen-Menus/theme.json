@@ -28,13 +28,6 @@
             "MainMenu"
           ]
         },
-        "25%": {
-          "--main-menu-width": [
-            "25vw",
-            "bigpicture",
-            "MainMenu"
-          ]
-        },
         "50%": {
           "--main-menu-width": [
             "50vw",
