@@ -1,7 +1,7 @@
 {
   "name": "Full Screen Menus",
   "author": "dankutron9000",
-  "version": "v1.3",
+  "version": "v1.4.0",
   "description": "Extends the QAM and Main Menus to the bottom of the screen. Introduces adjustable menu widths.",
   "target": "Tweak",
   "manifest_version": 8,
@@ -23,7 +23,7 @@
       "values": {
         "Off": {
           "--main-menu-width": [
-            "240px",
+            "240px",r
             "bigpicture",
             "MainMenu"
           ]
