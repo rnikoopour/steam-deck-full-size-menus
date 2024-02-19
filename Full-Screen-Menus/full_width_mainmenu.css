@@ -1,5 +1,5 @@
 .mainmenu_Menu_23IDi.mainmenu_Open_3apLK:only-child {
-    width: 100%;
+    width: var(--main-menu-width);
 }
 
 .mainmenu_Menu_23IDi.mainmenu_Open_3apLK:not(:only-child):not(.mainmenu_Collapsed_3I23q) {
@@ -15,7 +15,7 @@
 }
 
 .mainmenu_ItemOuter_1BbM8 {
-    width: 100%;
+    width: var(--main-menu-width);
 }
 
 .mainmenu_ActiveDot_1uLVH {
@@ -24,7 +24,7 @@
 }
 
 .mainmenu_ItemLabel_3x-ZK {
-    max-width: unset;
+    max-width: 100%;
 }
 
 .mainmenuapprunning_NavigationColumn_27FEg {
