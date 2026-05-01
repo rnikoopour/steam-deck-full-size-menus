@@ -1,12 +1,17 @@
-.quickaccessmenu_ViewPlaceholder_2orc8:not(.quickaccessmenu_FullHeight_3ud27) {
+/* quickaccessmenu_ViewPlaceholder — Steam now uses translateX(506px) to clip the
+   panel to 348px. We reset transform and set width directly via --qam-width. */
+._2orc8-PBheKd3BvuGXV6ZL {
+    width: var(--qam-width);
+    transform: none;
+}
+
+/* Extend QAM to bottom of screen in normal (non-in-game) mode.
+   _3ud27mXUQy5QSuYeKNy5LF = quickaccessmenu_FullHeight */
+._2orc8-PBheKd3BvuGXV6ZL:not(._3ud27mXUQy5QSuYeKNy5LF) {
     height: calc(100% - var(--basicui-header-height));
-    width: var(--qam-width);
 }
 
-.quickaccessmenu_ViewPlaceholder_2orc8 {
-    width: var(--qam-width);
-}
-
+/* mainmenu_ViewPlaceholder — class name TBD, kept from old version */
 .mainmenu_ViewPlaceholder_1PGlK {
     height: calc(100vh + var(--basicui-header-height));
     width: var(--main-menu-width);

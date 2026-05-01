@@ -1,4 +1,8 @@
-.quickaccessmenu_PanelOuterNav_2BB6u {
+#QuickAccess-Menu [role="tabpanel"] {
     width: 100%;
+    max-width: unset;
+}
+
+#QuickAccess-Menu > div:first-child {
     max-width: unset;
 }
