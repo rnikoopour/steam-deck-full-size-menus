@@ -1,3 +1,9 @@
+/* Steam hardcodes the root containers to 854px; override to actual viewport width */
+#QuickAccess-NA,
+#QuickAccess-Menu {
+    width: 100vw;
+}
+
 #QuickAccess-Menu [role="tabpanel"] {
     width: 100%;
     max-width: unset;
