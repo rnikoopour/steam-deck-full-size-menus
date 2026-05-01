@@ -1,9 +1,14 @@
-/* mainmenu_Menu + mainmenu_Open, only when NOT collapsed.
-   CSS Loader does full string replacement — using _hash (with leading _) inside
-   attribute selectors gets replaced to the wrong canonical hash. Drop the leading _
-   so CSS Loader doesn't match the string but [class*="..."] still matches as substring. */
-.mainmenu_Menu_23IDi.mainmenu_Open_3apLK:not([class*="3I23qeyanGptsMyU2bKr8w"]):not([class*="3jc8cR663Yg_bhogtRsOAF"]) {
+/* No game running: always use configured width */
+.mainmenu_Menu_23IDi.mainmenu_Open_3apLK:only-child {
     width: var(--main-menu-width);
+}
+
+/* Game running (AppRunning sibling present), not collapsed:
+   --main-menu-ingame-width is set to 240px ("No") or var(--main-menu-width) ("Yes")
+   via the "Expand Menu In Game" theme toggle.
+   Drop leading _ from Collapsed hashes so CSS Loader doesn't string-replace them. */
+.mainmenu_Menu_23IDi.mainmenu_Open_3apLK:not(:only-child):not([class*="3I23qeyanGptsMyU2bKr8w"]):not([class*="3jc8cR663Yg_bhogtRsOAF"]) {
+    width: var(--main-menu-ingame-width);
 }
 
 /* Use attribute substring selectors to bypass CSS Loader's stale translation for
