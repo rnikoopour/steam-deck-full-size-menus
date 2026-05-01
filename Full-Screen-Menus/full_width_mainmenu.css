@@ -43,9 +43,10 @@
     scroll-snap-align: start;
 }
 
-/* AppRunning scroll container: force snap so Steam's arbitrary scrollLeft after
-   menu width change always lands on a column boundary, not a partial offset.
-   Drop leading _ from hash per CSS Loader safe-pattern. */
-[class*="142LB5XvwS8bxvhYTNkuzq"] {
-    scroll-snap-type: x mandatory;
+/* AppRunning outer scroll container: the inner panel has overflow-x:hidden so
+   it never uses outerScrollLeft for navigation — outerScrollLeft should always
+   be 0. Constraining the content to 100% of the container eliminates the
+   90px overflow that Steam miscalculates after a menu width change. */
+[class*="12NNtyso3nbzJGi2XxHzcN"] {
+    max-width: 100%;
 }
