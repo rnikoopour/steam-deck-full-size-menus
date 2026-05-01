@@ -1,3 +1,4 @@
+/* mainmenu_Menu + mainmenu_Open — CSS Loader correctly translates these */
 .mainmenu_Menu_23IDi.mainmenu_Open_3apLK:only-child {
     width: var(--main-menu-width);
 }
@@ -6,27 +7,33 @@
     width: var(--main-menu-width);
 }
 
-/*
-  This is needed because without it the icons are shoved off
-  the screen to the left
-*/
-.mainmenu_Collapsed_3I23q > .mainmenu_ItemOuter_1BbM8 {
+/* Use attribute substring selectors to bypass CSS Loader's stale translation for
+   mainmenu_ItemOuter, mainmenu_ActiveDot, and mainmenu_ItemLabel — the translation
+   file maps these to wrong canonical hashes that don't match the current DOM. */
+
+/* mainmenu_Collapsed > mainmenu_ItemOuter */
+[class*="_3I23qeyanGptsMyU2bKr8w"] > [class*="1BbM8Qq8OL5N8gL4PYH397"],
+[class*="_3jc8cR663Yg_bhogtRsOAF"] > [class*="1BbM8Qq8OL5N8gL4PYH397"] {
     width: 240px;
 }
 
-.mainmenu_ItemOuter_1BbM8 {
+/* mainmenu_ItemOuter */
+[class*="1BbM8Qq8OL5N8gL4PYH397"] {
     width: var(--main-menu-width);
 }
 
-.mainmenu_ActiveDot_1uLVH {
+/* mainmenu_ActiveDot */
+[class*="1uLVHdiiCg78BRnhqLxUID"] {
     left: 5px !important;
     width: 1.25% !important;
 }
 
-.mainmenu_ItemLabel_3x-ZK {
+/* mainmenu_ItemLabel */
+[class*="3x-ZK1MiNB1Uvo7Aa6qEBs"] {
     max-width: 100%;
 }
 
+/* mainmenuapprunning_NavigationColumn — CSS Loader translates this one correctly */
 .mainmenuapprunning_NavigationColumn_27FEg {
     scroll-snap-align: start;
 }
