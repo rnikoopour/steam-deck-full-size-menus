@@ -1,6 +1,6 @@
-/* No game running: always use configured width */
+/* No game running: popup is already sized by CSS Loader, so fill it */
 .mainmenu_Menu_23IDi.mainmenu_Open_3apLK:only-child {
-    width: var(--main-menu-width);
+    width: 100%;
 }
 
 /* Game running (AppRunning sibling present), not collapsed:
@@ -24,7 +24,7 @@
 
 /* mainmenu_ItemOuter */
 [class*="1BbM8Qq8OL5N8gL4PYH397"] {
-    width: var(--main-menu-width);
+    width: 100%;
 }
 
 /* mainmenu_ActiveDot */
