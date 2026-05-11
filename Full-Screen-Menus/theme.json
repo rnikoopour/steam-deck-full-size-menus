@@ -2,7 +2,7 @@
   "name": "Full Screen Menus",
   "author": "dankutron9000",
   "version": "v1.5.3",
-  "description": "Extends the QAM and Main Menus to the bottom of the screen. Introduces adjustable menu widths.",
+  "description": "Extends the QAM and Main Menus to the bottom of the screen. Adds adjustable width controls for both menus and an option to keep the Main Menu expanded while in-game.",
   "target": "Tweak",
   "manifest_version": 8,
   "inject": {
